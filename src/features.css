@@ -1,0 +1,23 @@
+.features {
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem;
+}
+.feature {
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+.feature:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+.feature:nth-child(1) {
+  border-top: 4px solid #0a2a66;
+}
+.feature:nth-child(2) {
+  border-top: 4px solid #ffd700;
+}
+.feature:nth-child(3) {
+  border-top: 4px solid #ff5733;
+}
