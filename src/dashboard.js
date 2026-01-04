@@ -7,11 +7,11 @@ function Dashboard() {
   const [players, setPlayers] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/streak")
+    fetch("https://lumina-backend.onrender.com/api/streak")
       .then(res => res.json())
       .then(data => setStreak(data.streak));
 
-    fetch("http://localhost:5000/api/leaderboard")
+    fetch("https://lumina-backend.onrender.com")
       .then(res => res.json())
       .then(data => setPlayers(data));
   }, []);
